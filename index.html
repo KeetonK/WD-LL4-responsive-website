@@ -5,11 +5,116 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>LiveLab 4 Demo</title>
+  <!-- Link to Montserrat font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <!-- Navigation links with hrefs to sections below -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section (Hero) -->
+  <section id="home" class="hero">
+    <!-- Headline for the hero section -->
+    <h1>Explore Sustainable Travel</h1>
+    <!-- Subtext for the hero section -->
+    <p>Discover eco-friendly destinations and travel responsibly for a greener planet.</p>
+    <!-- Call-to-Action Button -->
+    <a href="#destinations" class="cta-btn">Plan Your Trip</a>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations">
+    <!-- Main title for Destinations -->
+    <h1 class="main-title">Eco-Friendly Destinations</h1>
+    <!-- Short description in an interesting font -->
+    <p class="dest-desc">Handpicked places where you can enjoy nature and help protect the planet.</p>
+    <section class="destinations">
+      <!-- Card 1 -->
+      <div class="card">
+        <!-- Image for the destination -->
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+          alt="Costa Rica Rainforest">
+        <!-- Name of the destination -->
+        <h2>Costa Rica Rainforest</h2>
+        <!-- Longer description with bullet points -->
+        <ul>
+          <li><strong>Country:</strong> Costa Rica</li>
+          <li><strong>Continent:</strong> North America (Central America region)</li>
+          <li><strong>Climate:</strong> Tropical, warm and humid year-round</li>
+          <li><strong>Fun Fact:</strong> Over 25% of Costa Rica is protected national parks and reserves!</li>
+          <li><strong>Why Visit?</strong> See colorful birds, monkeys, and amazing waterfalls in lush green forests.</li>
+        </ul>
+        <!-- Book Now link -->
+        <a href="https://www.visitcostarica.com/en" class="book-now-link" target="_blank">Book Now</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+          alt="Norwegian Fjords">
+        <h2>Norwegian Fjords</h2>
+        <ul>
+          <li><strong>Country:</strong> Norway</li>
+          <li><strong>Continent:</strong> Europe</li>
+          <li><strong>Climate:</strong> Cool summers, cold winters, lots of fresh air</li>
+          <li><strong>Fun Fact:</strong> Norway uses electric ferries to help keep the fjords clean!</li>
+          <li><strong>Why Visit?</strong> Enjoy stunning mountain views, deep blue waters, and peaceful villages.</li>
+        </ul>
+        <!-- Book Now link -->
+        <a href="https://www.visitnorway.com/places-to-go/fjords/" class="book-now-link" target="_blank">Book Now</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80"
+          alt="New Zealand National Parks">
+        <h2>New Zealand National Parks</h2>
+        <ul>
+          <li><strong>Country:</strong> New Zealand</li>
+          <li><strong>Continent:</strong> Oceania</li>
+          <li><strong>Climate:</strong> Mild, with warm summers and cool winters</li>
+          <li><strong>Fun Fact:</strong> New Zealand has no native land mammals except bats!</li>
+          <li><strong>Why Visit?</strong> Hike through beautiful mountains, see glowworm caves, and meet friendly locals.</li>
+        </ul>
+        <!-- Book Now link -->
+        <a href="https://www.newzealand.com/int/national-parks/" class="book-now-link" target="_blank">Book Now</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      We are passionate about sustainable travel and want to help you find destinations that care for the environment. Our mission is to inspire eco-friendly adventures and make it easy for everyone to travel responsibly.
+    </p>
+    <p>
+      Our team researches and selects destinations that are committed to protecting nature and supporting local communities. We believe travel can be a force for good, helping to preserve beautiful places for future generations.
+    </p>
+    <p>
+      Whether you are a first-time traveler or a seasoned explorer, we provide tips and resources to help you make greener choices. Join us on a journey to discover the world in a way that respects people, wildlife, and the planet!
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+      Have questions or suggestions? <br>
+      Email us at <a href="mailto:eco@travel.com">eco@travel.com</a>
+    </p>
+  </section>
+
   <script src="script.js"></script>
 </body>
 

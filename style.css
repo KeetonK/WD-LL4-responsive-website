@@ -1,0 +1,251 @@
+/* Use a professional and interesting font for the whole page */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #e0f7e9; /* Light green background */
+  padding: 10px 0;
+}
+
+/* Navigation styles */
+nav ul {
+  /* Remove default list style */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Center the navigation links */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between links */
+}
+
+nav ul li {
+  /* Inline list items */
+  display: inline;
+}
+
+nav ul li a {
+  /* Style the links */
+  text-decoration: none;
+  color: #2e7d32; /* Dark green */
+  font-weight: bold;
+  font-size: 1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #cce7c3; /* Light green on hover */
+}
+
+/* Hero section styles */
+.hero {
+  /* Use the provided collage image as background */
+  background: linear-gradient(rgba(220,255,220,0.7), rgba(220,255,220,0.7)),
+    url('IMG/World\ Collage.jpg') center/cover no-repeat;
+  text-align: center;
+  /* Make hero section take up the whole page */
+  min-height: 100vh; /* 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: #205522; /* Dark green text */
+  position: relative; /* Needed for the text box positioning */
+}
+
+/* Add a box for the hero text */
+.hero-text-box {
+  background: rgba(255, 255, 255, 0.85); /* White with some transparency */
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* Soft shadow */
+  display: inline-block; /* Shrink to fit content */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+/* Call-to-Action Button styles */
+.cta-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  background-color: #388e3c; /* Green background */
+  color: #fff; /* White text */
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cta-btn:hover {
+  background-color: #205522; /* Darker green on hover */
+}
+
+/* Style for the destinations section */
+.destinations {
+  /* Stack cards vertically by default (mobile-first) */
+  display: block;
+  margin: 20px;
+}
+
+/* Style for each card */
+.card {
+  /* Add a border and some padding */
+  border: 1px solid #cce7c3;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #f4fff4;
+  /* Add a little shadow for depth */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  /* Center text */
+  text-align: center;
+}
+
+/* Make images responsive for all screens */
+.card img {
+  max-width: 100%; /* Image will not be wider than its container */
+  width: 100%;     /* Fill the card width */
+  height: 180px;   /* Fixed height for all images */
+  object-fit: cover; /* Crop images to fill the area */
+  border-radius: 6px;
+}
+
+/* Add some space below the card title */
+.card h2 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+/* Main title for Destinations section */
+.main-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #205522;
+}
+
+/* Destinations description with an interesting font */
+.dest-desc {
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif; /* Match main font */
+  font-size: 1.1em;
+  color: #388e3c;
+  margin-bottom: 30px;
+}
+
+/* Style for the Book Now link in each card */
+.book-now-link {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 18px;
+  background-color: #388e3c;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.book-now-link:hover {
+  background-color: #205522;
+}
+
+/* About section styles */
+.about {
+  background-color: #e0f7e9;
+  padding: 30px 20px;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.about h2 {
+  color: #205522;
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: #205522;
+  font-size: 1em;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #f4fff4;
+  padding: 30px 20px;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.contact h2 {
+  color: #205522;
+  margin-bottom: 10px;
+}
+
+.contact p, .contact a {
+  color: #205522;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* Adjust layout and spacing for screens 600px and wider */
+@media (min-width: 600px) {
+  .destinations {
+    /* Add more space around the cards */
+    margin: 40px;
+    gap: 30px; /* More space between cards */
+  }
+  .card {
+    /* Add more padding and a little more width */
+    padding: 24px;
+    width: 340px;
+  }
+  .main-title {
+    font-size: 2.4em;
+    margin-top: 50px;
+    margin-bottom: 18px;
+  }
+  .dest-desc {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+}
+
+/* Desktop layout: show cards side by side */
+@media (min-width: 700px) {
+  .destinations {
+    /* Use Flexbox to align cards horizontally */
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+  }
+  .card {
+    /* Set a fixed width for cards on desktop */
+    width: 300px;
+    margin-bottom: 0; /* Remove bottom margin for horizontal layout */
+  }
+}
